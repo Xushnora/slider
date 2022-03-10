@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+    width: 600px;
+    border-radius: 8px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(321deg, rgba(160,231,229,1) 1%, rgba(160,231,229,1) 26%, rgba(100,156,223,0.9332107843137255) 85%);
+    transition: all 1s ease;
+}
+
+.container {
+    width: 800px;
+    height: 450px;
+    background-image: linear-gradient(321deg, rgba(60,197,236,1) 0%, rgba(100,156,223,0.9332107843137255) 78%);
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.inner-container {
+    width: 600px;
+    height: 337px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.slider {
+    display: flex;
+    transition: all 1s ease;
+}
+
+.btns {
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%, 50%);
+
+}
+
+.btns button {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+.btns button:nth-child(1) {
+    background-color: #fff;
+}
